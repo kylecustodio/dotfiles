@@ -22,10 +22,6 @@ alias egrep='egrep --color=auto'
 autoload -U promptinit
 promptinit
 prompt spaceship
-SPACESHIP_TIME_SHOW=true
-SPACESHIP_TIME_12HR=true
-SPACESHIP_DIR_PREFIX='[ '
-SPACESHIP_DIR_SUFFIX=' ] '
 SPACESHIP_CHAR_SYMBOL=' '
 SPACESHIP_VI_MODE_SHOW=false
 
