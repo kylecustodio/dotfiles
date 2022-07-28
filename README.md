@@ -10,4 +10,4 @@
 - GTK Theme / Icons: Everforest
 - Shell: zsh
   - Prompt: spaceship
-- Terminal:
+- Terminal: kitty
