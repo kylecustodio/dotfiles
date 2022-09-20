@@ -9,6 +9,7 @@ HISTFILE=~/.zsh_history
 setopt histignorealldups sharehistory
 
 # ZSH PLUGINS
+source /usr/local/lib/node_modules/spaceship-prompt/spaceship.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -18,12 +19,6 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# PROMPT
-autoload -U promptinit
-promptinit
-prompt spaceship
-SPACESHIP_CHAR_SYMBOL=' '
-SPACESHIP_VI_MODE_SHOW=false
-
 # NEOFETCH
 neofetch
+
