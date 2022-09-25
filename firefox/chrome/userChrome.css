@@ -51,28 +51,28 @@
 
     @media (prefers-color-scheme: dark) { :root {
 
-        --window-colour:                     #2f383e;
-        --secondary-colour:                  #374247;
-        --inverted-colour:                   #D3C6AA;
+        --window-colour:                     #1E2021;
+        --secondary-colour:                  #191B1C;
+        --inverted-colour:                   #FAFAFC;
 
         /* Containter Tab Colours */
-        --uc-identity-colour-blue:            #7FBBB3;
-        --uc-identity-colour-turquoise:       #83C092;
-        --uc-identity-colour-green:           #A7C080;
-        --uc-identity-colour-yellow:          #DBBC7F;
-        --uc-identity-colour-orange:          #e69875;
-        --uc-identity-colour-red:             #E67E80;
-        --uc-identity-colour-pink:            #e67e80;
-        --uc-identity-colour-purple:          #D699B6;
+        --uc-identity-colour-blue:            #7ED6DF;
+        --uc-identity-colour-turquoise:       #55E6C1;
+        --uc-identity-colour-green:           #B8E994;
+        --uc-identity-colour-yellow:          #F7D794;
+        --uc-identity-colour-orange:          #F19066;
+        --uc-identity-colour-red:             #FC5C65;
+        --uc-identity-colour-pink:            #F78FB3;
+        --uc-identity-colour-purple:          #786FA6;
 
-        --uc-identity-colour-blue-muted:      #7FBBB3;
-        --uc-identity-colour-turquoise-muted: #83C092;
-        --uc-identity-colour-green-muted:     #A7C080;
-        --uc-identity-colour-yellow-muted:    #DBBC7F;
-        --uc-identity-colour-orange-muted:    #e69875;
-        --uc-identity-colour-red-muted:       #E67E80;
-        --uc-identity-colour-pink-muted:      #e67e80;
-        --uc-identity-colour-purple-muted:    #D699B6;
+        --uc-identity-colour-blue-muted:      #7ED6DF99;
+        --uc-identity-colour-turquoise-muted: #55E6C199;
+        --uc-identity-colour-green-muted:     #B8E99499;
+        --uc-identity-colour-yellow-muted:    #F7D794CC;
+        --uc-identity-colour-orange-muted:    #F19066FF;
+        --uc-identity-colour-red-muted:       #FC5C65FF;
+        --uc-identity-colour-pink-muted:      #F78FB399;
+        --uc-identity-colour-purple-muted:    #786FA6FF;
 
     }}
 
@@ -110,7 +110,7 @@
 :root {
 
     /* URL colour in URL bar suggestions */
-    --urlbar-popup-url-color: var(--uc-identity-colour-green) !important;
+    --urlbar-popup-url-color: var(--uc-identity-colour-purple) !important;
 
 
     /*---+---+---+---+---+---+---+
@@ -118,7 +118,7 @@
      +---+---+---+---+---+---+---*/
 
     /* global border radius */
-    --uc-border-radius: 10px;
+    --uc-border-radius: 0;
 
     /* dynamic url bar width settings */
     --uc-urlbar-width: clamp(200px, 40vw, 500px);
@@ -501,5 +501,3 @@ window,
 .identity-color-red       { --identity-tab-color: var(--uc-identity-colour-red)       !important; --identity-icon-color: var(--uc-identity-colour-red)       !important; --uc-identity-gradient-colour: var(--uc-identity-colour-red-muted) !important;  }
 .identity-color-pink      { --identity-tab-color: var(--uc-identity-colour-pink)      !important; --identity-icon-color: var(--uc-identity-colour-pink)      !important; --uc-identity-gradient-colour: var(--uc-identity-colour-pink-muted) !important;  }
 .identity-color-purple    { --identity-tab-color: var(--uc-identity-colour-purple)    !important; --identity-icon-color: var(--uc-identity-colour-purple)    !important; --uc-identity-gradient-colour: var(--uc-identity-colour-purple-muted) !important;  }
-
-
