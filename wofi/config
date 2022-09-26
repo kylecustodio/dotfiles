@@ -12,4 +12,3 @@ drun-display_generic=true
 key_down=Tab
 key_expand=Right
 key_forward=Down
-style=styles.css
