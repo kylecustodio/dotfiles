@@ -51,9 +51,9 @@
 
     @media (prefers-color-scheme: dark) { :root {
 
-        --window-colour:                     #1E2021;
-        --secondary-colour:                  #191B1C;
-        --inverted-colour:                   #FAFAFC;
+        --window-colour:                     #2f383e;
+        --secondary-colour:                  #374247;
+        --inverted-colour:                   #d3c6aa;
 
     }}
 
@@ -61,9 +61,9 @@
 
     @media (prefers-color-scheme: light) { :root {
 
-        --window-colour:                     #FAFAFC;
-        --secondary-colour:                  #EAEAEC;
-        --inverted-colour:                   #1E2021;
+        --window-colour:                     #fdf6e3;
+        --secondary-colour:                  #f3efda;
+        --inverted-colour:                   #2f383e;
 
     }}
 
