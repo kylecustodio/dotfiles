@@ -7,8 +7,9 @@
     "clock"
   ],
   "modules-right": [
-    "pulseaudio",
     "network",
+    "bluetooth",
+    "pulseaudio",
     "battery"
   ],
   "clock": {
@@ -38,8 +39,7 @@
     "on-click": "gnome-control-center wifi"
   },
   "pulseaudio": {
-    "format": "{volume}% {icon} ",
-    "format-bluetooth": "{volume}% {icon}",
+    "format": "{icon} ",
     "format-muted": "",
     "format-icons": {
       "headphones": "",
@@ -54,5 +54,11 @@
       ]
     },
     "on-click": "gnome-control-center sound"
+  },
+  "bluetooth": {
+    "format": " ",
+    "format-off": "",
+    "on-click": "gnome-control-center bluetooth",
+    "tooltip-format": "{status}"
   }
 }
