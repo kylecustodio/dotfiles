@@ -2,19 +2,29 @@
   "layer": "top",
   "position": "top",
   "height": 24,
-  "modules-left": [],
+  "modules-left": [
+    "wlr/taskbar"
+  ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
+    "tray",
     "network",
     "bluetooth",
     "pulseaudio",
-    "battery"
+    "battery",
+    "custom/power"
   ],
+  "wlr/taskbar": {
+    "icon-size": "6",
+    "format": "{icon}",
+    "tooltip-format": "{title}",
+    "on-click": "minimize-raise",
+    "on-click-middle": "close"
+  },
   "clock": {
-    "format": "{:%I:%M %p}",
-    "format-alt": "{:%Y-%m-%d}"
+    "format": "{:%I:%M %p}"
   },
   "battery": {
     "bat": "BAT0",
@@ -33,13 +43,16 @@
     "on-click": "gnome-control-center power"
   },
   "network": {
-    "format-wifi": " ",
+    "format-wifi": "",
     "format-ethernet": "",
     "format-disconnected": "⚠",
-    "on-click": "gnome-control-center wifi"
+    "on-click": "gnome-control-center wifi",
+    "tooltip-format-wifi": "{essid}",
+    "tooltip-format-ethernet": "{essid}",
+    "tooltip-format-disconnected": "disconnected"
   },
   "pulseaudio": {
-    "format": "{icon} ",
+    "format": "{icon}",
     "format-muted": "",
     "format-icons": {
       "headphones": "",
@@ -56,9 +69,14 @@
     "on-click": "gnome-control-center sound"
   },
   "bluetooth": {
-    "format": " ",
+    "format": "",
     "format-off": "",
     "on-click": "gnome-control-center bluetooth",
-    "tooltip-format": "{status}"
+    "tooltip-format-connected": "{num_connections} connected"
+  },
+  "custom/power": {
+    "format": "",
+    "on-click": "wlogout",
+    "tooltip": false
   }
 }

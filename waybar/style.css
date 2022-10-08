@@ -1,48 +1,87 @@
+@define-color background #2f383e;
+@define-color foreground #d3c6aa;
+@define-color select #374247;
+@define-color warn #e67e80;
+
 * {
-  border: none;
-  border-radius: 0;
   font-family: "Liga SFMono Nerd Font";
-  font-size: 12px;
-  min-height: 0;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 window#waybar {
-  background: #2f383e;
-  color: #d3c6aa;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+  color: @foreground;
 }
 
-#clock,
-#battery,
+#custom-power,
+#tray,
 #network,
-#pulseaudio {
-  padding: 0 3px;
-  margin: 0 2px;
-}
-
 #clock {
-  font-weight: bold;
+  padding: 0px 6px;
+  background: @background;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
-#battery icon {
-  color: #e67e80;
+#cpu,
+#battery,
+#bluetooth,
+#pulseaudio {
+  border-radius: 0px;
+  padding: 5px 6px;
+  background: @background;
+  margin: 6px 0px;
 }
 
-@keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: black;
-  }
+#tray {
+  margin-right: 6px;
 }
 
-#battery.warning:not(.charging) {
-  color: white;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+#network {
+  margin-right: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
-#network.disconnected {
-  background: #e67e80;
+#custom-power {
+  margin-left: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-right: 10px;
+}
+
+#taskbar {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#taskbar button {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: @background;
+  margin-right: 6px;
+}
+
+#taskbar button.active {
+  background-color: @foreground;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: @warn;
 }
