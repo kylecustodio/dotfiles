@@ -16,14 +16,17 @@
   background-color: #2f383e;
   border: 2px solid #374247;
   padding: 12px;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 #entry:selected {
   background-color: #d3c6aa;
-  border: 2px solid #d3c6aa;
   border-radius: 4px;
   outline: none;
+}
+
+#entry {
+  padding: 8px;
 }
 
 #text:selected {
