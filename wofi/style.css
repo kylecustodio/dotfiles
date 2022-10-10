@@ -1,21 +1,28 @@
 #window {
   font-family: "Liga SFMono Nerd Font";
+  background: transparent;
 }
 
 #input {
-  border-radius: 0;
-  border: none;
+  border-radius: 4px;
+  border: 2px solid #374247;
   color: #d3c6aa;
   background-color: #374247;
+  margin-bottom: 12px;
 }
 
 #outer-box {
   color: #d3c6aa;
   background-color: #2f383e;
+  border: 2px solid #374247;
+  padding: 12px;
+  border-radius: 6px;
 }
 
 #entry:selected {
   background-color: #d3c6aa;
+  border: 2px solid #d3c6aa;
+  border-radius: 4px;
   outline: none;
 }
 
