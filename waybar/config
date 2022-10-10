@@ -76,7 +76,7 @@
   },
   "custom/power": {
     "format": "",
-    "on-click": "wlogout",
+    "on-click": "~/bin/wofipowermenu.py",
     "tooltip": false
   }
 }
