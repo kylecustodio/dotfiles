@@ -1,9 +1,10 @@
 {
-  "layer": "top",
-  "position": "top",
-  "height": 24,
+  "margin-left": 15,
+  "margin-right": 15,
+  "margin-top": 10,
   "modules-left": [
-    "wlr/taskbar"
+    "sway/workspaces",
+    "sway/window"
   ],
   "modules-center": [
     "clock"
@@ -16,57 +17,56 @@
     "battery",
     "custom/power"
   ],
-  "wlr/taskbar": {
-    "icon-size": "6",
-    "format": "{icon}",
-    "tooltip-format": "{title}",
-    "on-click": "minimize-raise",
-    "on-click-middle": "close"
+  "sway/workspaces": {
+    "disable-scroll": true
+  },
+  "sway/window": {
+    "max-length": 50
+  },
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10,
+    "show-passive-items": true
+  },
+  "pulseaudio": {
+    "format": "墳 {volume}%",
+    "format-alt": "{icon} {volume}%",
+    "format-muted": "婢",
+    "format-icons": [
+      "奔",
+      "墳",
+      ""
+    ],
+    "scroll-step": 3
   },
   "clock": {
     "format": "{:%I:%M %p}"
   },
   "battery": {
-    "bat": "BAT0",
     "states": {
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon} ",
+    "format": "{icon} {capacity}%",
+    "tooltip-format": "{timeTo}, {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " ",
+    "format-alt": "{time} {icon}",
     "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
-    "on-click": "gnome-control-center power"
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "network": {
-    "format-wifi": "",
-    "format-ethernet": "",
-    "format-disconnected": "⚠",
-    "on-click": "gnome-control-center wifi",
-    "tooltip-format-wifi": "{essid}",
-    "tooltip-format-ethernet": "{essid}",
-    "tooltip-format-disconnected": "disconnected"
-  },
-  "pulseaudio": {
-    "format": "{icon}",
-    "format-muted": "",
-    "format-icons": {
-      "headphones": "",
-      "handsfree": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": [
-        "",
-        ""
-      ]
-    },
-    "on-click": "gnome-control-center sound"
+    "format-wifi": "直 ",
+    "format-ethernet": "{ifname}: {ipaddr}/{cidr}  ",
+    "format-linked": "{ifname} (No IP)  ",
+    "format-disconnected": " 睊 ",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "tooltip-format": "{essid} {signalStrength}%"
   },
   "bluetooth": {
     "format": "",

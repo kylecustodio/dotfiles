@@ -1,4 +1,56 @@
-@define-color background #2f383e;
+* {
+  border: none;
+  font-family: "Liga SFMono Nerd Font", sans-serif;
+  font-size: 14px;
+}
+
+window#waybar {
+  background-color: #2f383e;
+  color: #d3c6aa;
+}
+
+#workspaces,
+#window,
+#pulseaudio,
+#clock,
+#battery,
+#network,
+#bluetooth,
+#tray,
+#custom-power {
+  background-color: #2f383e;
+  color: #d3c6aa;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  min-width: 20px;
+  color: #d3c6aa;
+  border-radius: 0;
+}
+
+#workspaces button.focused {
+  background-color: #d3c6aa;
+  color: #2f383e;
+}
+
+#workspaces button.urgent {
+  background-color: #e67e80;
+  color: #2f383e;
+}
+
+#window,
+#pulseaudio,
+#clock,
+#battery,
+#network,
+#bluetooth,
+#tray,
+#custom-power {
+  padding: 0 10px;
+}
+
+/* @define-color background #2f383e;
 @define-color foreground #d3c6aa;
 @define-color select #374247;
 @define-color warn #e67e80;
@@ -55,13 +107,39 @@ window#waybar {
   margin-left: 0px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  margin-right: 10px;
+  margin-right: 15px;
+}
+
+#workspaces {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#workspaces button {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 6px;
+  background-color: @background;
+  color: @foreground;
+}
+
+#workspaces button.focused {
+  color: @background;
+  background-color: @foreground;
+}
+
+#workspaces button:hover {
+  background-color: @select;
+  color: @background;
 }
 
 #taskbar {
   margin-top: 6px;
   margin-bottom: 6px;
-  margin-left: 10px;
+  margin-left: 15px;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -84,4 +162,4 @@ window#waybar {
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
   background-color: @warn;
-}
+} */
