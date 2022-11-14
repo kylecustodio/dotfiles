@@ -206,6 +206,6 @@ bar {
 
 # Autostart
 exec mako &
-
+exec /usr/libexec/xdg-desktop-portal -r & /usr/libexec/xdg-desktop-portal-wlr
 
 include @sysconfdir@/sway/config.d/*
