@@ -1,9 +1,0 @@
-%YAML 1.3
----
-- MouseGesture: Mouse Left
-- KeyPress: [Super_L, Control_L, Up]
-...
----
-- MouseGesture: Mouse Right
-- KeyPress: [Super_L, Control_L, Down]
-...
