@@ -43,14 +43,14 @@
     "format": "{:%I:%M %p}"
   },
   "battery": {
+    "bat": "BAT0",
     "states": {
       "warning": 30,
       "critical": 15
     },
     "format": "{icon} {capacity}%",
-    "tooltip-format": "{timeTo}, {capacity}%",
+    "tooltip-format": "{capacity}%",
     "format-charging": " {capacity}%",
-    "format-plugged": " ",
     "format-alt": "{time} {icon}",
     "format-icons": [
       "",
