@@ -18,11 +18,11 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi | xargs swaymsg exec --
+set $menu fuzzel
 
 set $primary DP-5
 set $laptop eDP-1
-set $vertical DP-1
+set $vertical DP-2
 
 ### Output configuration
 #

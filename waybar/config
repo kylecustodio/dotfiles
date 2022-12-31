@@ -76,7 +76,7 @@
   },
   "custom/power": {
     "format": "",
-    "on-click": "~/bin/wofipowermenu.py",
+    "on-click": "powermenu",
     "tooltip": false
   }
 }
