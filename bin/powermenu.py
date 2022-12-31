@@ -18,7 +18,7 @@ def run_menu():
   )
 
   options = "\n".join(keys)
-  choice = os.popen("echo -e '" + options + "' | fuzzel -d -p 'power:'").readline().strip()
+  choice = os.popen("echo -e '" + options + "' | fuzzel -d -p 'power: '").readline().strip()
   if choice in keys:
     os.popen(actions[keys.index(choice)])
 
