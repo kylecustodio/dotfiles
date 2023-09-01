@@ -1,0 +1,53 @@
+.switcher-box-layout {
+  background-color: #2d353b;
+  border-radius: 12px;
+  /* box-shadow: 0 2px 8px rgba(24, 28, 32, 0.8); */
+  color: #d3c6aa;
+  font-family: "Liga SFMono Nerd Font", monospace;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+StEntry.switcher-entry {
+  background-color: #2d353b !important;
+  border: none;
+  border-radius: 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: none;
+  color: #d3c6aa;
+  margin: 0.6em;
+}
+
+.switcher-box:hover {
+  background-color: #343f44;
+}
+
+.switcher-box:last-child {
+  border-radius: 0 0 12px 12px;
+}
+
+.switcher-icon,
+.switcher-label {
+  padding: 0.6em;
+}
+
+.switcher-label {
+  padding-left: 0;
+}
+
+.switcher-highlight {
+  background-color: #475258;
+  color: #d3c6aa;
+}
+
+.switcher-highlight:hover {
+  background-color: #475258;
+  color: #d3c6aa;
+}
+
+.switcher-shortcut {
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  text-align: center;
+}
