@@ -18,9 +18,9 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-alias code='code -enable-features=UseOzonePlatform -ozone-platform=wayland'
+alias code='flatpak run com.visualstudio.code'
 
 # z jump around
-. ~/z.sh
+# . ~/z.sh
 
 eval "$(starship init zsh)"
