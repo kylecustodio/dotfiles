@@ -18,7 +18,13 @@ set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $rofi_cmd rofi \
+        -terminal '$term'
+# Shows a combined list of the applications with desktop files and
+# executables from PATH.
+# TODO: add window with the next release of rofi-wayland
+set $menu $rofi_cmd -show drun -display-drun ""
+
 # Monitors
 set $main DP-3
 set $internal eDP-1
@@ -231,7 +237,7 @@ bar {
     colors {
         statusline #d3c6aa
         background #2d353b
-        focused_workspace #9da9a0ff #9da9a0ff #2d353b
+        focused_workspace #d3c6aaff #d3c6aaff #2d353b
         active_workspace #3d484dff #3d484dff #d3c6aa
         inactive_workspace #2d353bff #2d353bff #d3c6aa
     }
