@@ -239,6 +239,6 @@ bar {
     swaybar_command waybar
 }
 
-exec_always autotiling
+exec_always ~/bin/autotiling
 
 include /etc/sway/config.d/*
