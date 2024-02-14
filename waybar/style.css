@@ -1,0 +1,112 @@
+@import "everforest.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Liga SFMono Nerd Font";
+  font-size: 14px;
+  min-height: 0;
+  /* padding: 0px 2px; */
+  margin: 0px 2px;
+}
+
+window#waybar {
+  background-color: @bg0;
+  color: @fg;
+}
+
+tooltip {
+  background: @bg1;
+  border-radius: 6px;
+}
+tooltip label {
+  color: @fg;
+}
+
+#workspaces button {
+  margin: 5px 2px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  background-color: @bg0;
+  color: @fg;
+}
+
+#workspaces button:hover {
+  box-shadow: none;
+  background: @bg1;
+}
+
+#workspaces button.focused {
+  background-color: @bg2;
+  /* color: @bg0; */
+}
+
+#workspaces button.urgent {
+  background-color: @red;
+}
+
+#window {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+#tray,
+#cpu,
+#memory,
+#battery,
+#backlight,
+#pulseaudio {
+  border-radius: 4px;
+  margin: 5px 2px;
+  padding: 2px 5px;
+}
+
+#tray {
+  color: @bg_yellow;
+  background-color: @grey1;
+}
+
+#cpu {
+  background-color: @purple;
+  color: @bg_yellow;
+}
+
+#memory {
+  background-color: @yellow;
+  color: @bg_yellow;
+}
+
+#battery {
+  background-color: @aqua;
+  color: @bg0;
+}
+#battery.plugged {
+  background-color: @green;
+}
+#battery.charging {
+  background-color: @green;
+}
+#battery.critical:not(.charging) {
+  background-color: @red;
+}
+#battery.ok:not(.charging) {
+  background-color: @yellow;
+}
+#battery.good:not(.charging) {
+  background-color: @aqua;
+}
+
+#backlight {
+  background-color: @blue;
+  color: @bg_yellow;
+}
+
+#pulseaudio {
+  background-color: @grey2;
+  color: @bg0;
+}
+
+#pulseaudio.muted {
+  background-color: @grey2;
+  color: @bg0;
+}
