@@ -8,7 +8,7 @@
     background-color:      #2d353b;
     border-color:          #d3c6aa;
     text-color:           #d3c6aa;
-    font:            "Liga SFMono Nerd Font 11";
+    font:            "Liga SFMono Nerd Font 10";
 }
 window {
     anchor:     north;
@@ -31,9 +31,10 @@ entry {
     width:      10em;
 }
 element {
-    padding: 0px 2px;
+    padding: 0px 7px;
 }
 element selected {
+    border-radius: 4px;
     background-color: #d3c6aa;
     text-color: #2d353b;
 }
@@ -41,4 +42,8 @@ element selected {
 element-text, element-icon {
   background-color: inherit;
   text-color: inherit;
+}
+
+inputbar {
+    enabled: false;
 }
