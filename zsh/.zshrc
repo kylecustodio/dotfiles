@@ -23,4 +23,6 @@ alias code='flatpak run com.visualstudio.code'
 # z jump around
 # . ~/z.sh
 
+export PATH="$HOME/bin:$PATH"
+
 eval "$(starship init zsh)"
