@@ -33,12 +33,13 @@ tooltip label {
 
 #workspaces button:hover {
   box-shadow: none;
-  background: @bg1;
+  background: @bg2;
+  color: @fg;
 }
 
 #workspaces button.focused {
-  background-color: @bg2;
-  /* color: @bg0; */
+  background-color: @fg;
+  color: @bg0;
 }
 
 #workspaces button.urgent {
