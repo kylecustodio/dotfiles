@@ -1,7 +1,3 @@
 configuration {
 }
 @theme "dmenu"
-
-prompt {
-  enabled: false
-}
