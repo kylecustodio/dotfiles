@@ -1,0 +1,29 @@
+[global]
+frame_color = "#343f44"
+separator_color = frame
+monitor = 1
+corner_radius = 4
+
+padding = 20
+horizontal_padding = 20
+gap_size = 15
+
+font = Liga SFMono Nerd Font 10
+
+highlight = "#9da9a0"
+progress_bar_corner_radius = 2
+
+[urgency_low]
+background = "#343f44"
+foreground = "#d3c6aa"
+highlight = "#9da9a0"
+
+[urgency_normal]
+background = "#343f44"
+foreground = "#d3c6aa"
+highlight = "#9da9a0"
+
+[urgency_critical]
+background = "#343f44"
+foreground = "#d3c6aa"
+frame_color = "#e67e80"
