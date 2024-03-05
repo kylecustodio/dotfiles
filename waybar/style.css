@@ -56,7 +56,8 @@ tooltip label {
 #memory,
 #battery,
 #backlight,
-#pulseaudio {
+#pulseaudio,
+#idle_inhibitor {
   border-radius: 4px;
   margin: 5px 2px;
   padding: 2px 5px;

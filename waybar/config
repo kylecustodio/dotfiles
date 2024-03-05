@@ -15,10 +15,11 @@
     "custom/separator",
     "pulseaudio",
     "backlight",
-    "battery"
+    "battery",
+    "idle_inhibitor"
   ],
   "sway/window": {
-    "format": "{app_id}",
+    "format": "{title}",
     "max-length": 25
   },
   "sway/mode": {
@@ -27,16 +28,16 @@
   "sway/workspaces": {
     "persistent-workspaces": {
       "1": [
-        "DP-4"
+        "DP-3"
       ],
       "2": [
-        "DP-4"
+        "DP-3"
       ],
       "3": [
-        "DP-4"
+        "DP-3"
       ],
       "4": [
-        "DP-4"
+        "DP-3"
       ]
     },
     "format": "{name}"
@@ -44,8 +45,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "",
-      "deactivated": ""
+      "activated": "",
+      "deactivated": ""
     }
   },
   "custom/separator": {
@@ -80,11 +81,11 @@
     "format-alt": "󰆌 {percentage}%"
   },
   "battery": {
-    "bat": "BAT0",
+    // "bat": "BAT0",
     "adp": "ADP1",
     "states": {
       "good": 95,
-      "ok": 60,
+      // "ok": 60,
       "warning": 30,
       "critical": 15
     },
