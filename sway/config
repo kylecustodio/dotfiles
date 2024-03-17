@@ -43,9 +43,9 @@ set $main 'LG Electronics LG HDR 4K 209NTQDBU012'
 set $internal eDP-1
 set $vertical 'HP Inc. HP 27f 3CM8281DWJ   '
 
-output $internal resolution 2560x1600 scale 1.5 position 4920,0
-output $main resolution 3840x2160 position 1080,0
-output $vertical resolution 1080x1920 position 0,0 transform 270
+# output $internal resolution 2560x1600 scale 1 position 4920,0
+# output $main resolution 3840x2160 position 1080,0
+# output $vertical resolution 1080x1920 position 0,0 transform 270
 
 ### Idle configuration
 #
