@@ -36,14 +36,14 @@ tooltip label {
   background: @bg2;
   color: @fg;
 }
-
+/*
 #workspaces button.focused {
   background-color: @fg;
   color: @bg0;
 }
-
+*/
 #workspaces button.urgent {
-  background-color: @red;
+  color: @red;
 }
 
 #window {
