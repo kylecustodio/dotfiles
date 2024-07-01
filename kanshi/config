@@ -1,5 +1,5 @@
 profile mobile {
-  output eDP-1 mode 2560x1600 position 0,0 scale 1.25
+  output eDP-1 mode 2560x1600 position 0,0 scale 1.25 enable
 }
 
 profile docked {
@@ -12,4 +12,9 @@ profile gaming {
   output eDP-1 mode 2560x1600 position 3840,0 scale 1.25
   output "LG Electronics LG HDR 4K 209NTQDBU012" mode 3840x2160 position 0,0
   output "HP Inc. HP 27f 3CM8281DWJ   " disable 
+}
+
+profile tv {
+  output eDP-1 disable
+  output "BBY INSIGNIA-TV 0x00000101" mode 1920x1080 position 0,0 scale 1 enable
 }

@@ -73,7 +73,7 @@ set $vertical 'HP Inc. HP 27f 3CM8281DWJ   '
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
-input "2:7:SynPS/2_Synaptics_TouchPad" {
+input "1739:52992:06CBCE44:00_06CB:CF00_Touchpad" {
     dwt enabled
     tap enabled
     natural_scroll enabled
