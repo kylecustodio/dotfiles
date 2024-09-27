@@ -3,18 +3,18 @@ profile mobile {
 }
 
 profile docked {
-  output eDP-1 mode 2560x1600 position 4920,0 scale 1
-  output "LG Electronics LG HDR 4K 209NTQDBU012" mode 3840x2160 position 1080,0
+  output eDP-1 mode 2560x1600 position 4920,0 scale 1 enable
+  output "LG Electronics LG HDR 4K 209NTQDBU012" mode 3840x2160 position 1080,0 enable
   output "HP Inc. HP 27f 3CM8281DWJ   " mode 1920x1080 position 0,0 transform 90 enable
 }
 
-profile gaming {
-  output eDP-1 mode 2560x1600 position 3840,0 scale 1
-  output "LG Electronics LG HDR 4K 209NTQDBU012" mode 3840x2160 position 0,0
-  output "HP Inc. HP 27f 3CM8281DWJ   " disable 
-}
+# profile gaming {
+#   output eDP-1 mode 2560x1600 position 3840,0 scale 1 enable
+#   output "LG Electronics LG HDR 4K 209NTQDBU012" mode 3840x2160 position 0,0 enable
+#   output "HP Inc. HP 27f 3CM8281DWJ   " disable
+# }
 
-profile tv {
-  output eDP-1 disable
-  output "BBY INSIGNIA-TV 0x00000101" mode 1920x1080 position 0,0 scale 1 enable
-}
+# profile tv {
+#   output eDP-1 disable
+#  output "BBY INSIGNIA-TV 0x00000101" mode 1920x1080 position 0,0 scale 1 enable
+# }

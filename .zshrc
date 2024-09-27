@@ -39,3 +39,4 @@ autoload -Uz _zinit
 
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
+export PATH=$HOME/.local/bin:$PATH

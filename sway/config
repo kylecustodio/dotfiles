@@ -43,9 +43,9 @@ set $main 'LG Electronics LG HDR 4K 209NTQDBU012'
 set $internal eDP-1
 set $vertical 'HP Inc. HP 27f 3CM8281DWJ   '
 
-# output $internal resolution 2560x1600 scale 1 position 4920,0
-# output $main resolution 3840x2160 position 1080,0
-# output $vertical resolution 1080x1920 position 0,0 transform 270
+output $internal resolution 2560x1600 scale 1 position 4920,0
+output $main resolution 3840x2160 position 1080,0
+output $vertical resolution 1080x1920 position 0,0 transform 270
 
 ### Idle configuration
 #
@@ -105,7 +105,7 @@ input "1739:52992:06CBCE44:00_06CB:CF00_Touchpad" {
 
     # Exit sway (logs you out of your Wayland session)
     # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-    bindsym $mod+Shift+e exec $rofi_cmd -show power-menu -modi power-menu:$HOME/bin/rofi-power-menu 
+    bindsym $mod+Shift+e exec $rofi_cmd -show power-menu -modi power-menu:$HOME/bin/rofi-power-menu
 #
 # Moving around:
 #
@@ -224,9 +224,9 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-# 
+#
 # Gaps and borders
-# 
+#
 gaps inner 15
 default_border pixel 2
 client.focused #d3c6aa #d3c6aa #d3c6aa #d3c6aa
