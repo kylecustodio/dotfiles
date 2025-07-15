@@ -7,7 +7,6 @@
     "height": 20,
     "spacing": 0,
     "modules-left": [
-        "custom/launcher",
         "sway/workspaces",
         "sway/window",
         "sway/mode"
@@ -17,6 +16,7 @@
     ],
     "modules-right": [
     	"mpris",
+      "tray",
     	"backlight",
 	    "pulseaudio",
         "network",
@@ -30,8 +30,8 @@
             "1": [],
             "2": [],
             "3": [],
-            "4": [],
-        },
+            "4": []
+        }
     },
     "sway/window": {
         "format": "{}",
@@ -86,7 +86,7 @@
         ],
         "tooltip-format-disconnected": "Disconnected",
         "tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-        "on-click": "~/.config/rofi/rofi-wifi-menu.sh &",
+        "on-click": "nm-connection-editor",
         "format-ethernet": "{ifname}",
         "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "nospacing": 1,
@@ -152,7 +152,7 @@
     "custom/powermenu": {
         "format": "⏻ ",
         "tooltip": false,
-        "on-click": "~/.config/rofi/powermenu/type-6/powermenu.sh &"
+        "on-click": "rofi -show power-menu -modi power-menu:$HOME/bin/rofi-power-menu"
     },
     "mpris": {
     	"format": "{player_icon} {dynamic}",
@@ -174,5 +174,5 @@
         "activated": "",
         "deactivated": ""
         }
-    },
+    }
 }

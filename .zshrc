@@ -39,4 +39,10 @@ autoload -Uz _zinit
 
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
+
+alias protontricks='flatpak run com.github.Matoking.protontricks'
+alias idea='flatpak run com.jetbrains.IntelliJ-IDEA-Ultimate'
+
+export JAVA_HOME=/etc/alternatives/java_sdk/
+
 export PATH=$HOME/.local/bin:$PATH

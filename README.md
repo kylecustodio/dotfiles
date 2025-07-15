@@ -1,6 +1,8 @@
 # dotfiles
 
-Main:
+Sway on Fedora
 
-- OS: Fedora Sway Spin
-
+- Foot
+- Waybar
+- Rofi
+- Dunst

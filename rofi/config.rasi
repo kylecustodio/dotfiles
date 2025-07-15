@@ -89,6 +89,8 @@ inputbar {
     margin:     0   4px;
     background-color: @background-alt;
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    border:           3;
+    border-radius:    8;
 }
 case-indicator {
     spacing:    0;
