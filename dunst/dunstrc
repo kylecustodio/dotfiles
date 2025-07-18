@@ -8,7 +8,7 @@ padding = 20
 horizontal_padding = 20
 gap_size = 15
 
-font = Liga SFMono Nerd Font 10
+font = Adwaita Mono Nerd Font 10
 
 highlight = "#9da9a0"
 progress_bar_corner_radius = 2

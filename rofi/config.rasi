@@ -1,5 +1,5 @@
 configuration {
-    font: "Liga SFMono Nerd Font 11";
+    font: "Adwaita Mono Nerd Font 11";
     drun {
         display-name: " ";
     }
